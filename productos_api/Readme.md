@@ -21,6 +21,11 @@
 
 - Para iniciar el servidor, ejecute `npm start`
 
+## Documentación
+
+Para ver la documentación de la Api, se debe importar el archivo `Prueba IngyDev - Backend Api.postman_collection.json` 
+en **Postman**
+
 ## Notas
 
 Desarrollado por José Espinoza Salas como prueba para IngyDev
