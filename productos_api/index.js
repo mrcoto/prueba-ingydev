@@ -20,6 +20,8 @@ app.use(cors())
 const morgan = require('morgan')
 app.use(morgan('tiny'))
 
-app.listen(port, () => {
+app.listen(port, async () => {
   console.log(`Servidor ejecutandose en http://localhost:${port}`)
 })
+
+
