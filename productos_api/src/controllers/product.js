@@ -1,15 +1,16 @@
 const models = require('./../models')
-const ProductStatus = require('./../models/productstatus')
 const model = models.Product
 
+const includes = ['brand', 'category', 'line', 'manufacturer_type', 'status', 'uen', 'uom']
+
 module.exports.list = async function(req, res) {
-  const data = await model.findAll()
+  const data = await model.findAll({include: includes})
   res.json(data)
 };
 
 exports.find = async function(req, res) {
   const id = req.params.id
-  const detail = await model.findOne({where: {id: id}})
+  const detail = await model.findOne({where: {id: id}, include: includes})
   if (detail == null) {
     res.status(404).json({message: 'No encontrado'})
   } else {

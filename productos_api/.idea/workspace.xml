@@ -3,21 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="84d34924-647b-4b27-a04a-a57755f0b5a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20201230154857-create-product-uom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230154857-create-product-uom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20201230154944-create-product-line.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230154944-create-product-line.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155002-create-product-category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155002-create-product-category.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155003-create-product-status.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155003-create-product-status.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155032-create-product-manufacturer-type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155032-create-product-manufacturer-type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155121-create-product-uen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155121-create-product-uen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155131-create-product-brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155131-create-product-brand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155340-create-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155340-create-product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/productbrand.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productbrand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/productcategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productcategory.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/productline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productline.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/productmanufacturertype.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productmanufacturertype.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/productstatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productstatus.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/productuen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productuen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/integration/product.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/product.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +51,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
-    <property name="ts.external.directory.path" value="C:\Users\José\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\203.5981.135\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\José\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\203.6682.155\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -88,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609335649564</updated>
       <workItem from="1609335650924" duration="15657000" />
-      <workItem from="1609353778241" duration="566000" />
+      <workItem from="1609353778241" duration="1665000" />
     </task>
     <servers />
   </component>
