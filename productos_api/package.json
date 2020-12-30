@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node .",
-    "test": "jest"
+    "test": "jest --detectOpenHandles --forceExit"
   },
   "keywords": [
     "Prueba",
@@ -23,10 +23,12 @@
     "morgan": "^1.10.0",
     "pg": "^8.5.1",
     "pg-hstore": "^2.3.3",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "weak-napi": "^2.0.2"
   },
   "devDependencies": {
     "jest": "^26.6.3",
-    "sequelize-cli": "^6.2.0"
+    "sequelize-cli": "^6.2.0",
+    "supertest": "^6.0.1"
   }
 }
