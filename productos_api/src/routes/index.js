@@ -1,3 +1,4 @@
+const productRoutes = require('./product')
 const brandRoutes = require('./productbrand')
 const categoryRoutes = require('./productcategory')
 const lineRoutes = require('./productline')
@@ -7,6 +8,7 @@ const uenRoutes = require('./productuen')
 const uomRoutes = require('./productuom')
 
 module.exports = (app) => {
+  app.use('/', productRoutes)
   app.use('/', brandRoutes)
   app.use('/', categoryRoutes)
   app.use('/', lineRoutes)
