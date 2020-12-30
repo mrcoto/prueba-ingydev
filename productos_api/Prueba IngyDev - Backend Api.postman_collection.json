@@ -1,0 +1,542 @@
+{
+	"info": {
+		"_postman_id": "54b05f57-771b-42f0-8362-930db0ea5ab0",
+		"name": "Prueba IngyDev - Backend Api",
+		"description": "Backend Api de la Prueba de IngyDev (Lista de Productos)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Marcas",
+			"item": [
+				{
+					"name": "Todas las Marcas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/brands",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands"
+							]
+						},
+						"description": "Endpoint para obtener todas las marcas"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Marca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/brands/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"brands",
+								"2"
+							]
+						},
+						"description": "Endpoint para obtener una sola marca"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categorias",
+			"item": [
+				{
+					"name": "Todas las Categorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories"
+							]
+						},
+						"description": "Endpoint para obtener todas las categorías de los productos"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Categoría",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/categories/5637148345",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categories",
+								"5637148345"
+							]
+						},
+						"description": "Endpoint para obtener una categoría"
+					},
+					"response": []
+				}
+			],
+			"description": "Categorías de cada Producto"
+		},
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "Productos Paginados",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products?page=2&size=15&status=1,2,3&brand=1,2,3&uom=1,2,3&line=5637148441,5637148382&category=5637148330,5637147580&manufacturer_type=1,2,3,4,5,6,7,8,9&sale_price=15000,100000&uen=1,2,3,4,5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								},
+								{
+									"key": "size",
+									"value": "15"
+								},
+								{
+									"key": "status",
+									"value": "1,2,3"
+								},
+								{
+									"key": "brand",
+									"value": "1,2,3"
+								},
+								{
+									"key": "uom",
+									"value": "1,2,3"
+								},
+								{
+									"key": "line",
+									"value": "5637148441,5637148382"
+								},
+								{
+									"key": "category",
+									"value": "5637148330,5637147580"
+								},
+								{
+									"key": "manufacturer_type",
+									"value": "1,2,3,4,5,6,7,8,9"
+								},
+								{
+									"key": "sale_price",
+									"value": "15000,100000"
+								},
+								{
+									"key": "uen",
+									"value": "1,2,3,4,5"
+								}
+							]
+						},
+						"description": "Endpoint para obtener todas las categorías de los productos"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/products/20",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								"20"
+							]
+						},
+						"description": "Endpoint para obtener un producto"
+					},
+					"response": []
+				}
+			],
+			"description": "Productos",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Unidad de Medida",
+			"item": [
+				{
+					"name": "Todas las Unidades de Medida",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/uoms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"uoms"
+							]
+						},
+						"description": "Endpoint para obtener todas las unidades de medida"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Unidad de Medida",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/uoms/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"uoms",
+								"3"
+							]
+						},
+						"description": "Endpoint para obtener una unidad de medida"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Unidad Estratégica de Negocio",
+			"item": [
+				{
+					"name": "Todas las Unidades Estratégicas de Negocio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/uens",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"uens"
+							]
+						},
+						"description": "Endpoint para obtener todas las Unidades Estratégicas de Negocio"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Unidad Estratégica de Negocio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/uens/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"uens",
+								"3"
+							]
+						},
+						"description": "Endpoint para obtener una unidad estratégica de negocio"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Estados de un Producto",
+			"item": [
+				{
+					"name": "Todas los Estados de un Producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/product_statuses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product_statuses"
+							]
+						},
+						"description": "Endpoint para obtener todos los estados de un producto"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Estado de un Producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/product_statuses/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product_statuses",
+								"2"
+							]
+						},
+						"description": "Endpoint para obtener el estado de un producto"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Tipos de Manufactura",
+			"item": [
+				{
+					"name": "Todos los Tipos de Manufactura",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/manufacturer_types",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"manufacturer_types"
+							]
+						},
+						"description": "Endpoint para obtener todos los Tipos de Manufactura"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Tipo de Manufactura",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/manufacturer_types/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"manufacturer_types",
+								"1"
+							]
+						},
+						"description": "Endpoint para obtener un tipo de manufactura"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Líneas de Producto",
+			"item": [
+				{
+					"name": "Todas las Líneas de Producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/product_lines",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product_lines"
+							]
+						},
+						"description": "Endpoint para obtener todas las líneas de los productos"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Línea de Producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/product_lines/5637173830",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"product_lines",
+								"5637173830"
+							]
+						},
+						"description": "Endpoint para obtener una línea de producto"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
