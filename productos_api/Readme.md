@@ -20,3 +20,7 @@
 - Para ejecutar pruebas, corra el comando `npm test`
 
 - Para iniciar el servidor, ejecute `npm start`
+
+## Notas
+
+Desarrollado por José Espinoza Salas como prueba para IngyDev

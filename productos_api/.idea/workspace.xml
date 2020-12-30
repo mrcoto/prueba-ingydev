@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d34924-647b-4b27-a04a-a57755f0b5a7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/queries/pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/queries/product.query.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/queries/product.query.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/integration/product.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/integration/product.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609335649564</updated>
       <workItem from="1609335650924" duration="15657000" />
-      <workItem from="1609353778241" duration="1665000" />
+      <workItem from="1609353778241" duration="5236000" />
     </task>
     <servers />
   </component>

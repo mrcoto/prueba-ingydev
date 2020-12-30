@@ -1,10 +1,12 @@
 const models = require('./../models')
 const model = models.Product
+const query = require('./../queries/product.query')
+const pagination = require('./../queries/pagination')
 
 const includes = ['brand', 'category', 'line', 'manufacturer_type', 'status', 'uen', 'uom']
 
-module.exports.list = async function(req, res) {
-  const data = await model.findAll({include: includes})
+module.exports.paginate = async function(req, res) {
+  const data = await pagination.paginate(model, req, {where: query.where(req), include: includes})
   res.json(data)
 };
 
