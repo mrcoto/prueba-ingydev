@@ -13,7 +13,7 @@ module.exports = {
     products.reduce((acc, product) => {
       const name = product.status
       if (!statuses.hasOwnProperty(name)) {
-        statuses[name] = {name: name, createdAt: new Date(), updatedAt: new Date()}
+        statuses[name] = {name: name, created_at: new Date(), updated_at: new Date()}
       }
     }, statuses)
     await queryInterface.bulkInsert('product_status', Object.values(statuses), {});

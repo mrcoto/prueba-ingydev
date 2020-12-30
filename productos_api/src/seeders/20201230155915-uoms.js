@@ -13,7 +13,7 @@ module.exports = {
     products.reduce((acc, product) => {
       const code = product.uom.toUpperCase()
       if (!uoms.hasOwnProperty(code)) {
-        uoms[code] = {code: code, createdAt: new Date(), updatedAt: new Date()}
+        uoms[code] = {code: code, created_at: new Date(), updated_at: new Date()}
       }
     }, uoms)
     await queryInterface.bulkInsert('product_uom', Object.values(uoms), {});

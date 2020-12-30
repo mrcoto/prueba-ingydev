@@ -2,11 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="84d34924-647b-4b27-a04a-a57755f0b5a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/integration/product.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/20201230154857-create-product-uom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230154857-create-product-uom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/20201230154944-create-product-line.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230154944-create-product-line.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155002-create-product-category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155002-create-product-category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155003-create-product-status.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155003-create-product-status.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155032-create-product-manufacturer-type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155032-create-product-manufacturer-type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155121-create-product-uen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155121-create-product-uen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155131-create-product-brand.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155131-create-product-brand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/migrations/20201230155340-create-product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/migrations/20201230155340-create-product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/productbrand.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productbrand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/productcategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productcategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/productline.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productline.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/productmanufacturertype.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productmanufacturertype.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/productstatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productstatus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/productuen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/productuen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609335649564</updated>
       <workItem from="1609335650924" duration="15657000" />
-      <workItem from="1609353778241" duration="226000" />
+      <workItem from="1609353778241" duration="566000" />
     </task>
     <servers />
   </component>

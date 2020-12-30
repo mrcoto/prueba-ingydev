@@ -13,7 +13,7 @@ module.exports = {
     products.reduce((acc, product) => {
       const name = product.category
       if (!categories.hasOwnProperty(name)) {
-        categories[name] = {id: parseInt(product.category_id), name: name, createdAt: new Date(), updatedAt: new Date()}
+        categories[name] = {id: parseInt(product.category_id), name: name, created_at: new Date(), updated_at: new Date()}
       }
     }, categories)
     await queryInterface.bulkInsert('product_category', Object.values(categories), {});

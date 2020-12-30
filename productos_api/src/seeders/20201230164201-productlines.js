@@ -13,7 +13,7 @@ module.exports = {
     products.reduce((acc, product) => {
       const name = product.line
       if (!lines.hasOwnProperty(name)) {
-        lines[name] = {id: parseInt(product.line_id), name: name, createdAt: new Date(), updatedAt: new Date()}
+        lines[name] = {id: parseInt(product.line_id), name: name, created_at: new Date(), updated_at: new Date()}
       }
     }, lines)
     await queryInterface.bulkInsert('product_line', Object.values(lines), {});

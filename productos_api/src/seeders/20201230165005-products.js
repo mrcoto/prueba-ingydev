@@ -43,7 +43,7 @@ module.exports = {
           description: product.description,
           image_150: product.image_150,
           image_450: product.image_450,
-          createdAt: new Date(), updatedAt: new Date()}
+          created_at: new Date(), updated_at: new Date()}
       }
     }, productData)
     await queryInterface.bulkInsert('product', Object.values(productData), {});

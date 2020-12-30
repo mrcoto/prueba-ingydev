@@ -19,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'ProductLine',
     tableName: 'product_line',
+    underscored: true
   });
   return ProductLine;
 };
