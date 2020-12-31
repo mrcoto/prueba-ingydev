@@ -4,9 +4,14 @@ import {ProductListComponent} from './product-list/product-list.component';
 import {ProductDetailComponent} from './product-detail/product-detail.component';
 import {ProductsComponent} from './products.component';
 import {ProductsRoutingModule} from './products.routing.module';
-import {HttpClientModule} from '@angular/common/http';
-import {ProductService} from '../../services/product/product.service';
 import {ServiceModule} from '../../services/service.module';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {ProductCardModule} from '../../components/product-card/product-card.module';
+import {RouterModule} from '@angular/router';
 
 
 
@@ -15,7 +20,14 @@ import {ServiceModule} from '../../services/service.module';
   imports: [
     CommonModule,
     ProductsRoutingModule,
-    ServiceModule
+    ServiceModule,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatPaginatorModule,
+    MatProgressBarModule,
+    ProductCardModule,
+    RouterModule,
   ],
   providers: []
 })

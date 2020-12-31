@@ -1,0 +1,35 @@
+.sale-price-container {
+  position: absolute;
+  bottom: 5px;
+  left: 16px;
+}
+
+.sale-price {
+  color: seagreen;
+  font-weight: bold;
+}
+
+.product-card:hover {
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.product-name {
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+.secondary {
+  color: dimgrey;
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+}
+
+mat-card {
+  height: 350px;
+}

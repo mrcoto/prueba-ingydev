@@ -30,7 +30,7 @@ export class ProductService {
     return Object.keys(filters)
       .reduce((list: string[], key) => {
         const value = filters[key];
-        if (value === undefined || value === null) {
+        if (value !== undefined && value !== null) {
           list.push(`${key}=${value}`);
         }
         return list;

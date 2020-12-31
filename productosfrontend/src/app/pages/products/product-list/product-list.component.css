@@ -1,0 +1,19 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.grid> * {
+  flex: 1 1 250px;
+  margin: 5px;
+}
+
+.block-button {
+  width: 100%;
+  padding: 8px;
+  margin: 8px;
+}
+
+.right {
+  text-align: right;
+}

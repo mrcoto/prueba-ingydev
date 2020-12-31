@@ -1,0 +1,14 @@
+<mat-card (click)="clickedCard(product)" class="product-card">
+  <div class="center">
+    <img [src]="product.image_150" alt="Product Image">
+  </div>
+  <mat-card-content>
+    <h3 class="secondary">{{product.brand.name}}</h3>
+    <h3 class="secondary">{{product.category.name}}</h3>
+    <h3 class="product-name">{{product.name}}</h3>
+    <h3 class="secondary">{{product.code}}</h3>
+    <div class="sale-price-container">
+      <h2 class="sale-price">{{product.sale_price | price}}</h2>
+    </div>
+  </mat-card-content>
+</mat-card>

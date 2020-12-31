@@ -15,3 +15,8 @@ export class ProductStatus implements IProductStatus {
 
 }
 
+export const STATUS = {
+  COMMERCIAL : 1,
+  NORMAL: 2,
+  DISCONTINUED: 3,
+};
