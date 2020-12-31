@@ -20,6 +20,10 @@ export class ProductService {
     return this.http.get<Pagination<Product>>(`${this.api}/products?${qs}`);
   }
 
+  find(id: number): Observable<Product> {
+    return this.http.get<Product>(`${this.api}/products/${id}`);
+  }
+
   private buildQueryString(filters: IProductFilters): string {
     filters.page = filters.page || 0;
     filters.size = filters.size || 10;

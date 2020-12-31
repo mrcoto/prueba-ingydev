@@ -6,6 +6,7 @@ import {ProductsComponent} from './products.component';
 import {ProductsRoutingModule} from './products.routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import {ProductService} from '../../services/product/product.service';
+import {ServiceModule} from '../../services/service.module';
 
 
 
@@ -13,9 +14,9 @@ import {ProductService} from '../../services/product/product.service';
   declarations: [ProductsComponent, ProductListComponent, ProductDetailComponent],
   imports: [
     CommonModule,
-    HttpClientModule,
     ProductsRoutingModule,
+    ServiceModule
   ],
-  providers: [ProductService]
+  providers: []
 })
 export class ProductsModule { }
