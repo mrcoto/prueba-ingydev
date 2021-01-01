@@ -16,10 +16,45 @@ Instrucciones
 •	No está permitido utilizar algún template para el diseño.
 •	Fecha de entrega Sábado 2 de enero 12:00
 
+## Quickstart
+
+Requisitos:
+- PostgreSQL
+- Nodejs 12
+- Angular 11
+
+(Desde una terminal de comandos) Para iniciar el Backend
+
+- Ejecute cd `productos_api`
+
+- Ejecute `npm install`
+
+- Copie el archivo `.env.example` y nómbrelo `.env`, luego modifique las variables del `.env` de ser necesario.
+
+- Cree la base de datos con el comando `npx sequelize-cli db:create`
+
+- Ejecute las migraciones con `npx sequelize-cli db:migrate`
+
+- Ejecute las semillas con `npx sequelize-cli db:seed:all`
+
+- Para ejecutar pruebas, corra el comando `npm test`
+
+- Para iniciar el servidor, ejecute `npm start`
+
+(Desde otra terminal de comandos) Para iniciar el frontend
+
+- Ejecute cd `productosfrontend`
+
+- Ejecute `npm install`
+
+- Para iniciar el frontend, ejecute `ng serve`
+
+
 
 ## Proyectos
 
-- productos_api: Backend escrito en Nodejs
+- productos_api: Backend escrito en Nodejs + Expressjs + Sequelize + PostgreSQL
+- productosfrontend: Frontend desarrollado en Angular
 
 ## Notas
 
