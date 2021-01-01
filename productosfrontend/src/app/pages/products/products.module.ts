@@ -13,6 +13,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {ProductCardModule} from '../../components/product-card/product-card.module';
 import {RouterModule} from '@angular/router';
 import {ProductFilterModule} from '../../components/product-filter/product-filter.module';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -30,6 +33,9 @@ import {ProductFilterModule} from '../../components/product-filter/product-filte
     ProductCardModule,
     RouterModule,
     ProductFilterModule,
+    MatInputModule,
+    FormsModule,
+    MatCardModule,
   ],
   providers: []
 })

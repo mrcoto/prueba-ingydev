@@ -4,6 +4,8 @@ import {Pagination} from '../../../models/pagination';
 import {Product} from '../../../models/product';
 import {IProductFilters} from '../../../services/product/product-filters';
 import {Router} from '@angular/router';
+import {Subject} from 'rxjs';
+import {debounceTime} from 'rxjs/operators';
 
 @Component({
   selector: 'app-product-list',
@@ -23,6 +25,9 @@ export class ProductListComponent implements OnInit {
   };
   filters: IProductFilters = {};
 
+  private subject: Subject<string> = new Subject();
+  search = '';
+
   constructor(
     private readonly router: Router,
     private readonly productService: ProductService,
@@ -30,6 +35,12 @@ export class ProductListComponent implements OnInit {
 
   ngOnInit(): void {
     this.reloadProducts();
+    this.subject.pipe(
+      debounceTime(100)
+    ).subscribe(search => {
+      this.filters.search = search && search !== '' ? search : null;
+      this.reloadProducts();
+    });
   }
 
   reloadProducts(): void {
@@ -68,6 +79,10 @@ export class ProductListComponent implements OnInit {
   onChangedFilter(filters: IProductFilters): void {
     this.filters = filters;
     this.reloadProducts();
+  }
+
+  changedInput(): void {
+    this.subject.next(this.search);
   }
 
 }

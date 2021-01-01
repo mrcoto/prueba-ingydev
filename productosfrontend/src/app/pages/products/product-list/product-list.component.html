@@ -5,6 +5,16 @@
   <div>
     <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
 
+
+    <mat-card class="search-card">
+      <mat-card-content>
+        <mat-form-field floatLabel='never'>
+          <mat-icon matPrefix>search</mat-icon>
+          <input type="text" matInput placeholder=" Buscar..." [(ngModel)]="search" (keyup)="changedInput()">
+        </mat-form-field>
+      </mat-card-content>
+    </mat-card>
+
     <div class="grid">
       <div *ngFor="let product of products.data">
         <app-product-card [product]="product" (onCardClicked)="onClickedCard($event)"></app-product-card>

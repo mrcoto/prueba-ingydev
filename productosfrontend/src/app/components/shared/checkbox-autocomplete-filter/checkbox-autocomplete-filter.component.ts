@@ -34,7 +34,7 @@ export class CheckboxAutocompleteFilterComponent implements OnInit, DoCheck {
       this.oldSelected = mapToSelected(data);
       this.selected = mapToSelected(data);
       this.filteredSelected = mapToSelected(data);
-      this.showFilteredSelected = (this.showMore ? this.filteredSelected.slice(0, this.maxLength) : this.filteredSelected);
+      this.showFilteredSelected = this.filteredSelected.slice(0, this.maxLength);
     });
   }
 
@@ -59,14 +59,15 @@ export class CheckboxAutocompleteFilterComponent implements OnInit, DoCheck {
   }
 
   private updateOldSelected(): void {
-    for (let i = 0; i < this.selected.length; i++) {
-      this.oldSelected[i].completed = this.selected[i].completed;
+    for (let i = 0; i < this.showFilteredSelected.length; i++) {
+      this.oldSelected[i].completed = this.showFilteredSelected[i].completed;
+      this.selected[i].completed = this.showFilteredSelected[i].completed;
     }
   }
 
   private hasChanges(): boolean {
-    for (let i = 0; i < this.selected.length; i++) {
-      if (this.oldSelected[i].completed !== this.selected[i].completed) {
+    for (let i = 0; i < this.showFilteredSelected.length; i++) {
+      if (this.oldSelected[i].completed !== this.showFilteredSelected[i].completed) {
         return true;
       }
     }
@@ -80,7 +81,7 @@ export class CheckboxAutocompleteFilterComponent implements OnInit, DoCheck {
 
   showLessClicked(): void {
     this.showMore = true;
-    this.showFilteredSelected = this.filteredSelected.slice(0, this.maxLength)
+    this.showFilteredSelected = this.filteredSelected.slice(0, this.maxLength);
   }
 
 }

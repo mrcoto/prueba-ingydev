@@ -21,8 +21,6 @@ export class ProductFilterComponent implements OnInit {
   // tslint:disable-next-line:no-output-on-prefix
   @Output() onChangedFilter = new EventEmitter<IProductFilters>();
 
-  search: string;
-
   constructor(
     public brandService: BrandService,
     public categoryService: CategoryService,
@@ -38,6 +36,8 @@ export class ProductFilterComponent implements OnInit {
 
   changedCheckbox(key: string, values: Selected<any>[]): void {
     const idList = values.filter(value => value.completed).map(value => value.data.id);
+    console.log(values);
+    console.log(idList);
     if (idList.length > 0) {
       this.filters[key] = idList;
     } else {
