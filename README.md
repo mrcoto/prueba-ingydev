@@ -11,9 +11,13 @@ simulando un catálogo para la venta, en cual se pueda realizar algún filtro y 
 
 Instrucciones
 •	Dado el archivo productos.xlsx buscar la mejor forma de organizar y consumir la información de preferencia generar un api para consumir la información.
+
 •	Para el desarrollo utilice el lenguaje, bd y framework que más le acomode. El requisito es usar framework Angular.
+
 •	En cuanto al diseño se deja a libertad la utilización de colores, tipología y distribución del contenido.
+
 •	No está permitido utilizar algún template para el diseño.
+
 •	Fecha de entrega Sábado 2 de enero 12:00
 
 ## Quickstart
@@ -25,7 +29,7 @@ Requisitos:
 
 (Desde una terminal de comandos) Para iniciar el Backend
 
-- Ejecute cd `productos_api`
+- Ejecute `cd productos_api`
 
 - Ejecute `npm install`
 
@@ -43,7 +47,7 @@ Requisitos:
 
 (Desde otra terminal de comandos) Para iniciar el frontend
 
-- Ejecute cd `productosfrontend`
+- Ejecute `cd productosfrontend`
 
 - Ejecute `npm install`
 
