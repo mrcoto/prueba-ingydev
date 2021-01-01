@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {CheckboxFilterComponent} from './checkbox-filter.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {FormsModule} from '@angular/forms';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 
@@ -11,7 +12,8 @@ import {FormsModule} from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatExpansionModule,
   ],
   exports: [CheckboxFilterComponent]
 })

@@ -51,4 +51,9 @@ export class CheckboxFilterComponent implements OnInit, DoCheck {
     return false;
   }
 
+  get selectedCountLabel(): string {
+    const count = this.selected.filter(v => v.completed).length;
+    return count > 0 ? `(${count})` : '';
+  }
+
 }

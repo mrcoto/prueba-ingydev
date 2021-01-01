@@ -84,5 +84,10 @@ export class CheckboxAutocompleteFilterComponent implements OnInit, DoCheck {
     this.showFilteredSelected = this.filteredSelected.slice(0, this.maxLength);
   }
 
+  get selectedCountLabel(): string {
+    const count = this.selected.filter(v => v.completed).length;
+    return count > 0 ? `(${count})` : '';
+  }
+
 }
 
