@@ -16,6 +16,8 @@ import {ProductFilterModule} from '../../components/product-filter/product-filte
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
+import {PricePipeModule} from '../../pipes/price/price.pipe.module';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 
@@ -36,6 +38,8 @@ import {MatCardModule} from '@angular/material/card';
     MatInputModule,
     FormsModule,
     MatCardModule,
+    PricePipeModule,
+    MatChipsModule
   ],
   providers: []
 })

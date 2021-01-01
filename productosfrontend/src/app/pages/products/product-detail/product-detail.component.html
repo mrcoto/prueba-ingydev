@@ -1,1 +1,26 @@
-<p>product-detail works!</p>
+<mat-progress-bar mode="indeterminate" *ngIf="status === 'searching'"></mat-progress-bar>
+
+<div *ngIf="status === 'not_found'">Producto no encontrado...</div>
+
+<mat-card class="product-card" *ngIf="product != null && status === 'found'">
+  <mat-card-content class="sections">
+    <div class="center image-section">
+      <img [src]="product.image_450" class="image-container" alt="Product Image">
+    </div>
+    <div class="detail-section">
+      <h3 class="secondary">{{product.brand.name}}</h3>
+      <h3 class="secondary">{{product.category.name}}</h3>
+      <h3 class="secondary">{{product.line.name}}</h3>
+      <h3 class="product-name">{{product.name}}</h3>
+      <h3 class="secondary">{{product.description}}</h3>
+      <h3 class="secondary">{{product.code}}</h3>
+      <h2 class="sale-price">{{product.sale_price | price}} x C/U ({{product.uom.code}})</h2>
+
+
+      <button *ngIf="color" mat-raised-button [color]="color">{{product.status.name}}</button>
+      <br><br>
+      <button mat-stroked-button>{{product.manufacturer_type.name}}</button>
+    </div>
+  </mat-card-content>
+</mat-card>
+

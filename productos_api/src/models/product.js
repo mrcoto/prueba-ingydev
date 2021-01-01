@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
       Product.belongsTo(models.ProductManufacturerType, {foreignKey: 'manufacturer_type_id', as: 'manufacturer_type'})
       Product.belongsTo(models.ProductStatus, {foreignKey: 'status_id', as: 'status'})
       Product.belongsTo(models.ProductUen, {foreignKey: 'uen_id', as: 'uen'})
-      Product.belongsTo(models.ProductUom, {foreignKey: 'uen_id', as: 'uom'})
+      Product.belongsTo(models.ProductUom, {foreignKey: 'uom_id', as: 'uom'})
     }
   };
   Product.init({

@@ -1,0 +1,46 @@
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.image-section {
+  flex: 1 1;
+  margin: 10px;
+}
+
+.detail-section {
+  flex: 1 1;
+  flex-basis: 40%;
+  margin: 10px;
+}
+
+.center {
+  text-align: center;
+}
+
+.image-container {
+  width: 200px;
+  height: 200px;
+}
+
+.sale-price {
+  color: seagreen;
+  font-weight: bold;
+}
+
+.product-name {
+  font-weight: bold;
+  padding: 0px;
+  margin: 0px;
+}
+
+.secondary {
+  color: dimgrey;
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+}
+
+button {
+  width: 100% !important;
+}
