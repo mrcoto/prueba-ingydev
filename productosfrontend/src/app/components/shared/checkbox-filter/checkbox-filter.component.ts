@@ -9,7 +9,6 @@ import {Observable} from 'rxjs';
 })
 export class CheckboxFilterComponent implements OnInit, DoCheck {
 
-
   @Input() title = 'Título';
   @Input() data: Observable<any[]>;
   @Input() column;

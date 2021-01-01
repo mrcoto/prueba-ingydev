@@ -1,0 +1,24 @@
+<div class="section">
+  <span><h3><strong>{{title}}</strong></h3></span>
+  <mat-form-field floatLabel='never'>
+    <mat-icon matSuffix>search</mat-icon>
+    <input type="text" matInput placeholder="Buscar..." [(ngModel)]="search" (keyup)="changedInput()">
+  </mat-form-field>
+  <ul *ngIf="showFilteredSelected.length > 0">
+    <li *ngFor="let selectedRow of showFilteredSelected">
+      <mat-checkbox [(ngModel)]="selectedRow.completed" color="primary">
+        {{selectedRow.data[column]}}
+      </mat-checkbox>
+    </li>
+  </ul>
+  <div *ngIf="showFilteredSelected.length == 0">No se encontraron resultados...</div>
+  <button
+    mat-stroked-button
+    color="primary"
+    *ngIf="showMore && showFilteredSelected.length > 0 && showFilteredSelected.length < filteredSelected.length"
+    (click)="showMoreClicked()">Mostrar todos</button>
+  <button
+    mat-stroked-button color="warn"
+    *ngIf="!showMore && showFilteredSelected.length > 0"
+    (click)="showLessClicked()">Mostrar menos</button>
+</div>

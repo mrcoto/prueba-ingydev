@@ -6,7 +6,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {FormsModule} from '@angular/forms';
 import {CheckboxFilterModule} from '../shared/checkbox-filter/checkbox-filter.module';
-import {ChipAutocompleteFilterModule} from '../shared/chip-autocomplete-filter/chip-autocomplete-filter.module';
+import {CheckboxAutocompleteFilterModule} from '../shared/checkbox-autocomplete-filter/checkbox-autocomplete-filter.module';
 
 
 
@@ -19,7 +19,7 @@ import {ChipAutocompleteFilterModule} from '../shared/chip-autocomplete-filter/c
     MatCheckboxModule,
     FormsModule,
     CheckboxFilterModule,
-    ChipAutocompleteFilterModule,
+    CheckboxAutocompleteFilterModule,
   ],
   exports: [ProductFilterComponent]
 })

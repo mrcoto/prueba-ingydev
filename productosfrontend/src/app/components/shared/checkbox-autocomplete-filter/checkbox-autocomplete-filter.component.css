@@ -9,3 +9,12 @@ ul {
 .section {
 
 }
+
+mat-form-field {
+  width: 90%;
+}
+
+button {
+  width: 100%;
+  margin-bottom: 4px;
+}
