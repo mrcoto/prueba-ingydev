@@ -10,6 +10,7 @@ Realizar un sitio Web en el cual se pueda visualizar el listado de productos con
 simulando un catálogo para la venta, en cual se pueda realizar algún filtro y búsqueda de los productos.
 
 Instrucciones
+
 •	Dado el archivo productos.xlsx buscar la mejor forma de organizar y consumir la información de preferencia generar un api para consumir la información.
 
 •	Para el desarrollo utilice el lenguaje, bd y framework que más le acomode. El requisito es usar framework Angular.
@@ -53,6 +54,7 @@ Requisitos:
 
 - Para iniciar el frontend, ejecute `ng serve`
 
+**Se ejecutará en el puerto :4200**
 
 
 ## Proyectos
