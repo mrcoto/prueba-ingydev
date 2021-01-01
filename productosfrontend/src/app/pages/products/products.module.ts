@@ -12,6 +12,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {ProductCardModule} from '../../components/product-card/product-card.module';
 import {RouterModule} from '@angular/router';
+import {ProductFilterModule} from '../../components/product-filter/product-filter.module';
 
 
 
@@ -28,6 +29,7 @@ import {RouterModule} from '@angular/router';
     MatProgressBarModule,
     ProductCardModule,
     RouterModule,
+    ProductFilterModule,
   ],
   providers: []
 })

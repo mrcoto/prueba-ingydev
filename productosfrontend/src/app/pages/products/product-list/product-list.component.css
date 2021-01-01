@@ -1,3 +1,19 @@
+.two-column {
+  display: table;
+  width: 100%
+}
+
+.two-column > div:first-child {
+  display: table-cell;
+  width: 20%;
+  vertical-align:top;
+}
+
+.two-column > div:last-child {
+  display: table-cell;
+  width: 80%
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;

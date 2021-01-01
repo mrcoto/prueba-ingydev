@@ -1,0 +1,31 @@
+<app-checkbox-filter
+  title="Estados"
+  [data]="productStatusService.list()"
+  column="name"
+  (changedValues)="changedCheckbox('status', $event)">
+</app-checkbox-filter>
+
+<app-checkbox-filter
+  title="Manufactura"
+  [data]="manufacturerTypeService.list()"
+  column="name"
+  (changedValues)="changedCheckbox('manufacturer_type', $event)">
+</app-checkbox-filter>
+
+<app-checkbox-filter
+  title="Unidad de Medida"
+  [data]="uomService.list()"
+  column="code"
+  (changedValues)="changedCheckbox('uom', $event)">
+</app-checkbox-filter>
+
+<!--code: string;-->
+<!--name: string;-->
+
+<!--sale_price: number;-->
+
+<!--line_id: number;-->
+<!--category_id: number;-->
+<!--status_id: number;-->
+<!--uen_id: number;-->
+<!--brand_id: number;-->

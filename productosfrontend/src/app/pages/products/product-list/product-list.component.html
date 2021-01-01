@@ -1,20 +1,27 @@
-<mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+<div class="two-column">
+  <div>
+    <app-product-filter (onChangedFilter)="onChangedFilter($event)"></app-product-filter>
+  </div>
+  <div>
+    <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
 
-<div class="grid">
-  <div *ngFor="let product of products.data">
-    <app-product-card [product]="product" (onCardClicked)="onClickedCard($event)"></app-product-card>
+    <div class="grid">
+      <div *ngFor="let product of products.data">
+        <app-product-card [product]="product" (onCardClicked)="onClickedCard($event)"></app-product-card>
+      </div>
+    </div>
+
+    <div class="right">
+      <span>Se han encontrado: {{products.found}} producto(s).</span>
+    </div>
+    <br>
+    <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+
+    <button mat-raised-button *ngIf="products.total > products.found" color="primary" (click)="loadMoreProducts()"
+            class="block-button">
+      CARGAR MÁS PRODUCTOS
+    </button>
+
+    <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
   </div>
 </div>
-
-<div class="right">
-  <span>Se han encontrado: {{products.found}} producto(s).</span>
-</div>
-<br>
-<mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
-
-<button mat-raised-button *ngIf="products.total > products.found" color="primary" (click)="loadMoreProducts()"
-  class="block-button">
-  CARGAR MÁS PRODUCTOS
-</button>
-
-<mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
